@@ -1,12 +1,12 @@
 {
   "name": "split",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "split a Text Stream into a Line Stream",
-  "homepage": "http://github.com/dominictarr/split",
+  "homepage": "http://github.com/amitic/split",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dominictarr/split.git"
+    "url": "git://github.com/amitic/split.git"
   },
   "dependencies": {
     "through": "2"
