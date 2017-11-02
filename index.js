@@ -2,7 +2,7 @@
 
 // reduce is more tricky
 // maybe we want to group the reductions or emit progress updates occasionally
-// the most basic reduce just emits one 'data' event after it has recieved 'end'
+// the most basic reduce just emits one 'data' event after it has received 'end'
 
 
 const through = require('through')
@@ -45,7 +45,7 @@ function split(matcher, mapper, options) {
     soFar = pieces.pop()
 
     if (maxLength && soFar.length > maxLength)
-      stream.emit('error', new Error('maximum buffer reached'))
+      return stream.emit('error', new Error('maximum buffer reached'))
 
     for (let i = 0; i < pieces.length; i++) {
       let piece = pieces[i]
