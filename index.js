@@ -24,7 +24,8 @@ function split(matcher, mapper, options) {
     matcher = /\r?\n/
 
   function queue(stream, piece) {
-    stream.queue(Buffer.from(piece, encoding))
+    if (encoding === 'binary') stream.queue(Buffer.from(piece, encoding))
+    else stream.queue(piece)
   }
 
   function emit(stream, piece) {

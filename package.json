@@ -1,6 +1,6 @@
 {
   "name": "split",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "split a Text Stream into a Line Stream",
   "homepage": "http://github.com/amitic/split",
